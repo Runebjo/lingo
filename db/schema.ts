@@ -33,6 +33,7 @@ export const unitsRelations = relations(units, ({ many, one }) => ({
   course: one(courses, {
     fields: [units.courseId],
     references: [courses.id],
+    
   }),
   lessons: many(lessons),
 }));
